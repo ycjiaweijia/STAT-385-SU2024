@@ -41,28 +41,10 @@ book:
   date: last-modified
   chapters: 
     - index.qmd
-    - part: "Part I: Python"
-      chapters: 
-        - contents/1/intro.qmd
-        - contents/2/intro.qmd
-        - contents/3/intro.qmd
-        - contents/4/intro.qmd
-        - contents/5/intro.qmd
-        - contents/6/intro.qmd
-        - contents/7/intro.qmd
-    - part: "Part II: R"
+    - part: "Part I: R Basic"
       chapters:
         - contents/8/intro.qmd
-        - contents/9/intro.qmd
-        - contents/10/intro.qmd
     # - contents/references.qmd
-  appendices:
-    - contents/app/setup.qmd
-    - contents/app/path.qmd
-    - contents/app/virtenv.qmd
-    - contents/app/concepts.qmd
-    - contents/app/r.qmd
-    - contents/app/re.qmd
   sidebar:
     style: floating
     pinned: true
@@ -72,7 +54,7 @@ book:
     collapse-level: 1
     alignment: "center"
   navbar:
-    subtitle: "Fall 2024"
+    subtitle: "Summer 2024"
   page-navigation: true
 
 
