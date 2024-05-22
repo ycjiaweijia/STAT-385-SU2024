@@ -1,0 +1,82 @@
+project:
+  type: book
+  output-dir: docs
+
+toc: true
+number-sections: true
+top-level-division: part
+toc-depth: 3
+number-depth: 4
+bibliography: book.bib
+csl: "ims.csl"
+
+crossref:
+  labels: arabic        # (default is arabic)
+  subref-labels: roman i # (default is alpha a)
+
+
+execute:
+  freeze: auto
+
+knitr:
+  opts_chunk:
+    comment: "#>"
+    collapse: true
+
+jupyter: ds24
+
+format:
+  html:
+    theme: lumen
+    code-block-bg: true
+    code-block-border-left: true #"#31BAE9"
+    # code-line-numbers: true
+    highlight-style: atom-one
+    page-layout: article
+
+book:
+  title: "Python/R for Data Science"
+  subtitle: "Lecture notes for Fall 2024 at Arkansas Tech University"
+  author: "Xinli Xiao"
+  date: last-modified
+  chapters: 
+    - index.qmd
+    - part: "Part I: Python"
+      chapters: 
+        - contents/1/intro.qmd
+        - contents/2/intro.qmd
+        - contents/3/intro.qmd
+        - contents/4/intro.qmd
+        - contents/5/intro.qmd
+        - contents/6/intro.qmd
+        - contents/7/intro.qmd
+    - part: "Part II: R"
+      chapters:
+        - contents/8/intro.qmd
+        - contents/9/intro.qmd
+        - contents/10/intro.qmd
+    # - contents/references.qmd
+  appendices:
+    - contents/app/setup.qmd
+    - contents/app/path.qmd
+    - contents/app/virtenv.qmd
+    - contents/app/concepts.qmd
+    - contents/app/r.qmd
+    - contents/app/re.qmd
+  sidebar:
+    style: floating
+    pinned: true
+    align: center
+    border: true
+    search: true
+    collapse-level: 1
+    alignment: "center"
+  navbar:
+    subtitle: "Fall 2024"
+  page-navigation: true
+
+
+    
+
+
+
